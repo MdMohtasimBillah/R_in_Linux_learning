@@ -1,0 +1,13 @@
+library(tidyverse)
+library(RColorBrewer)
+if (!require("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+BiocManager::install
+BiocManager::install("clusterProfiler")
+library(clusterProfiler)
+BiocManager::install("org.Hs.eg.db")
+library(org.Hs.eg.db)
+library(DOSE)
+library(enrichplot)
+install.packages("ggupset")
+library(ggupset)
